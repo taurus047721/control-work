@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мини-Отель</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <a href="#" class="logo"><span>"Новотех" </span></a>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Домой </a></li>
+                        <li class="nav__item"><a href="#menu" class="nav__link">Обзор номеров</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">Об отеле </a></li>
+                        <li class="nav__item"><a href="#reviews" class="nav__link">Отзывы</a></li>
+                        <li class="nav__item"><a href="#contacts" class="nav__link">Контакты </a></li>
+                    </ul>
+                </nav>
+                <button class="menu-toggle" aria-label="Меню">
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                    <span class="menu-toggle__line"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero__title">"Новотех" </h1>
+                <p class="hero__subtitle">Мини-Отель</p>
+                <div class="hero__buttons">
+                    <a href="#menu" class="btn btn--primary">Обзор номеров</a>
+                    <a href="#contacts" class="btn btn--outline">Контакты</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <div class="about__inner">
+                    <div class="about__image">
+                        <img src="images/reception.jpg" alt="">
+                    </div>
+                    <div class="about__content">
+                        <h2 class="section-title">Об отеле</h2>
+                        <p class="about__text">Мини-Отель «Новотех» расположена в городе Сургуте, недалеко от набережной реки Обь и речного вокзала. Набережная является прекрасным местом для прогулок в любое время года. Поблизости находятся торговые центры, клубы, магазины, спорткомплекс, храм, кафе.</p>
+                        <p class="about__text">Согласно правилам предоставления гостиничных услуг в РФ для заселения в гостиницы на территории РФ гражданам России необходимо иметь при себе общегражданский паспорт, лицам, не достигшим 14-летнего возраста — свидетельство о рождении.</p>
+                        <ul class="about__features">
+                            <li class="feature-item">
+                                <span></span>
+                            </li>
+                            <li class="feature-item">
+                                <span>Заезд и выезд:</span>
+                            </li>
+                            <li class="feature-item">
+                                <span>Заезд с 13:00
+                                 Выезд до 12:00</span>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="menu">
+            <div class="container">
+                <h2 class="section-title">Номерной фонд</h2>
+                <div class="menu__content active" id="coffee">
+                    <div class="menu__grid">
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <div id="carouselExampleDark2" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="images/comfort1/1.jpg" class="d-block w-100" alt="images/comfort1/3.jpg">
+      <div class="carousel-caption d-none d-md-block">
+          </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/comfort1/2.jpg" class="d-block w-100" alt="images/comfort1/1.jpg">
+      <div class="carousel-caption d-none d-md-block">
+         </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/comfort1/3.jpg" class="d-block w-100" alt="images/comfort1/2.jpg">
+      <div class="carousel-caption d-none d-md-block">
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark2" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+                            </div>
+                            <p class="menu-item__description">Номер стандарт комфорт с 1 односпальной кроватью</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                               <div id="carouselExampleDark1" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="images/comfort2/1.jpg" class="d-block w-100" alt="images/comfort2/3.jpg">
+      <div class="carousel-caption d-none d-md-block">
+          </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/comfort2/2.jpg" class="d-block w-100" alt="images/comfort2/1.jpg">
+      <div class="carousel-caption d-none d-md-block">
+         </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/comfort2/3.jpg" class="d-block w-100" alt="images/comfort2/2.jpg">
+      <div class="carousel-caption d-none d-md-block">
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark1" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+                            </div>
+                            <p class="menu-item__description">Номер стандарт комфорт с 2 односпальными кроватями</p>
+                        </div>
+                        <div class="menu-item">
+                            <div class="menu-item__header">
+                                <div id="carouselExampleDark3" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="images/improvedcomfort/1.jpg" class="d-block w-100" alt="images/improvedcomfort/3.jpg">
+      <div class="carousel-caption d-none d-md-block">
+          </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="images/improvedcomfort/2.jpg" class="d-block w-100" alt="images/improvedcomfort/1.jpg">
+      <div class="carousel-caption d-none d-md-block">
+         </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/improvedcomfort/3.jpg" class="d-block w-100" alt="images/improvedcomfort/2.jpg">
+      <div class="carousel-caption d-none d-md-block">
+        </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark3" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Предыдущий</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark3" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Следующий</span>
+  </button>
+</div>
+                            
+                            </div>
+                            <p class="menu-item__description">Номер улучшенный комфорт</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2 class="section-title">Отзывы</h2>
+                <div class="reviews__slider">
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Очень уютный отель, замечательный персонал!</p>
+                        <div class="review__author">
+                            <img src="images/girl1.jpg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Арина</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Останавливаюсь не впервые. Уютно,удобно. Вкусный сытный завтрак.</p>
+                        <div class="review__author">
+                            <img src="images/girl2.jpg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Ольга</span>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <div class="review__rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <p class="review__text">Приятно удивило всё. Для начала встретили очень радушно несмотря на срочную бронь(приехал в отель минут через 20 после бронирования). Оформление и весь процесс заселения занял не более 5-ти минут.</p>
+                        <div class="review__author">
+                            <img src="images/man.jpg" alt=""
+                                class="review__photo">
+                            <span class="review__name">Александр Георгиевич</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts" class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__info">
+                        <h2 class="section-title">Контакты</h2>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt contact-icon"></i>
+                            <span>Россия, Ханты-Мансийский АО, Сургут, Югорская улица 15</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone contact-icon"></i>
+                            <span>8 (800) 222-60-90
+                                  Отдел бронирования, звонок бесплатный.
+                            </span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope contact-icon"></i>
+                            <span>info.apartments@mail.ru</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock contact-icon"></i>
+                            <span>круглосуточно </span>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://vk.com/id189518617" class="social-link" aria-label="vk"><i class="fa-brands fa-vk"></i></a>
+                            <a href="https://wa.me/+79505137985" class="social-link" aria-label="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="https://t.me/MikTaur" class="social-link" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>                              
+                        </div>
+                    </div>
+                    <div class="contacts__map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1920.0793671311815!2d73.4565044761786!3d61.23326575719326!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x437399cba7c20679%3A0x2b30acbf2cda29c9!2z0K7Qs9C-0YDRgdC60LDRjyDRg9C7LiwgMTUsINCh0YPRgNCz0YPRgiwg0KXQsNC90YLRiy3QnNCw0L3RgdC40LnRgdC60LjQuSDQsNCy0YLQvtC90L7QvNC90YvQuSDQvtC60YDRg9CzLCA2Mjg0MDE!5e0!3m2!1sru!2sru!4v1752378170739!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__logo">
+                    <a href="#" class="logo">"Новотех"</a>
+                    <p class="footer__text">Мини-Отель</p>
+                </div>
+                <div class="footer__nav">
+                    <h3 class="footer__title">Навигация</h3>
+                    <ul class="footer__list">
+                        <li><a href="#" class="footer__link">Домой</a></li>
+                        <li><a href="#menu" class="footer__link">Обзор номеров</a></li>
+                        <li><a href="#about" class="footer__link">Об отеле</a></li>
+                        <li><a href="#reviews" class="footer__link">Отзывы</a></li>
+                        <li><a href="#contacts" class="footer__link">Контакты</a></li>
+                    </ul>
+                </div>
+                <div class="footer__subscribe">
+                    <h3 class="footer__title">Подписка</h3>
+                    <p class="footer__text">Подпишитесь на наши новости и акции</p>
+                    <form class="subscribe-form">
+                        <input type="email" placeholder="Ваш email" class="subscribe-input">
+                        <button type="submit" class="subscribe-btn"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">© Copyright 2025</p>
+            </div>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>
